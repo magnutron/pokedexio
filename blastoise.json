@@ -1,0 +1,21 @@
+{
+  "name": "Blastoise",
+  "description": "It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.",
+  "ability": "Torrent",
+  "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
+  "footprint": "https://assets.pokemon.com/assets/cms2/img/cards/web/SMP/SMP_EN_SM189.png",
+  "dexindex": "9",
+  "type": "Water",
+  "weaknesses": "Grass & Electric",
+  "weight": 85502,
+  "height": 152.4,
+  "generation": 1,
+  "spilversion": 1,
+  "canEvolve": false,
+  "statsHP": 5,
+  "statsAttack": 5,
+  "statsDefence": 6,
+  "statsSpecialAttack": 5,
+  "statsSpecialDefence": 6,
+  "statsSpeed": 5
+}
