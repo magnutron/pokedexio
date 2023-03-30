@@ -9,25 +9,35 @@
     <title>PokédexIO</title>
   </head>
   <body>
-    <header><img src="banner.jpg" alt="" id="header_img" /></header>
+    <header>
+      <h1>PokedexIO</h1>
+      <div id="header_img"><img src="img\banner.jpg" /></div>
+    </header>
     <dialog id="dialog-pokemon">
       <h2 id="dialog-name"></h2>
-      <img id="dialog-img" src="" />
-      <h3 id="dialog-description"></h3>
-      <p id="dialog-ability"></p>
-      <p id="dialog-type"></p>
-      <p id="dialog-subtype"></p>
-      <p id="dialog-weaknesses"></p>
-      <p id="dialog-gender"></p>
-      <p id="dialog-weight"></p>
-      <p id="dialog-height"></p>
-      <p id="dialog-generation"></p>
-      <p id="dialog-statsHP"></p>
-      <p id="dialog-statsAttack"></p>
-      <p id="dialog-statsDefence"></p>
-      <p id="dialog-statsSpecialAttack"></p>
-      <p id="dialog-statsSpecialDefence"></p>
-      <p id="dialog-statsSpeed"></p>
+      <section class="dialog-grid">
+        <div id="dialog-img-div"><img id="dialog-img" src="" /></div>
+        <div id="dialog-info-div">
+          <h3 id="dialog-description"></h3>
+          <p id="dialog-generation"></p>
+          <p id="dialog-dexindex"></p>
+          <p id="dialog-ability"></p>
+          <p id="dialog-type"></p>
+          <p id="dialog-subtype"></p>
+          <p id="dialog-weaknesses"></p>
+          <p id="dialog-gender"></p>
+          <p id="dialog-weight"></p>
+          <p id="dialog-height"></p>
+          <ul>
+            <li id="dialog-statsHP"></li>
+            <li id="dialog-statsAttack"></li>
+            <li id="dialog-statsDefence"></li>
+            <li id="dialog-statsSpecialAttack"></li>
+            <li id="dialog-statsSpecialDefence"></li>
+            <li id="dialog-statsSpeed"></li>
+          </ul>
+        </div>
+      </section>
       <form method="dialog">
         <button>Close</button>
       </form>
