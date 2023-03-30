@@ -5,8 +5,6 @@ window.addEventListener("load", initApp);
 /////////////////////////
 const dburl = "https://cederdorff.github.io/dat-js/05-data/pokemons.json";
 
-//// Type logo url https://www.pngegg.com/en/png-fnqsn
-
 ////////////////////////
 /// Initialize App  ///
 //////////////////////
@@ -42,21 +40,29 @@ async function getPokemon(url) {
 //////////////////////////////////////////////
 function addPokemon(pokemon) {
   const list = document.querySelector("#pokemon");
+  let typeColor = pokemon.type.split(",")[0].trim().toLowerCase();
+
+  if (pokemon.type.includes("/")) {
+    typeColor = pokemon.type.split("/")[0].trim().toLowerCase();
+    console.log(typeColor);
+  }
+
   list.insertAdjacentHTML(
     "beforeend",
     /*html*/ `
         <article class="grid-item">
+        <div class="${typeColor}">
         <img src="${pokemon.image}">
         <h2>${pokemon.name}</h2>
         <p>${pokemon.type}</p>
+        </div>
         </article>
         `
   );
 
-  if (pokemon.type == "water") {
-    document.querySelector(".grid-item").classList.add("Water");
-  } else {
-  }
+console.log(typeColor)
+
+
 
   document.querySelector("#pokemon article:last-child").addEventListener("click", pokemonClicked);
 

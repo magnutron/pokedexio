@@ -1,14 +1,4 @@
-/* ---------- root variables ---------- */
-:root {
-  --green: rgb(38, 76, 89);
-  --light-green: rgb(172, 198, 201);
-  --light-grey: #f1f1f4;
-  --text-color-light: #f1f1f1;
-  --text-color-dark: #333;
-  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* ---------- general styling ---------- */
+/* ---------- GENERAL STYLING ---------- */
 html {
   color: white;
   font-family: var(--font-family);
@@ -49,7 +39,7 @@ img {
   height: auto;
 }
 
-/* ---------- header styling ---------- */
+/* ---------- HEADER STYLING ---------- */
 header {
   top: 0;
   left: 0;
@@ -86,7 +76,7 @@ header h1 {
   }
 }
 
-/* ---------- animations ---------- */
+/* ---------- ANIMATIONS ---------- */
 /* fade in */
 @keyframes fadeIn {
   from {
@@ -98,7 +88,7 @@ header h1 {
   }
 }
 
-/* ---------- grid container styling ---------- */
+/* ---------- GRID CONTAINER STYLING ---------- */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -128,7 +118,7 @@ header h1 {
   }
 }
 
-/* ---------- grid item styling ---------- */
+/* ---------- GRID ITEM STYLING ---------- */
 
 .grid-item {
   padding: 1.5em;
@@ -137,7 +127,7 @@ header h1 {
   animation: fadeIn 0.5s;
   cursor: pointer;
   border-radius: 1em;
-  box-shadow: 0px 3px 10px 0px rgba(245, 240, 240, 0.636) inset;
+  padding: 0;
 }
 
 .grid-item:hover {
@@ -145,21 +135,150 @@ header h1 {
 }
 
 .grid-item img {
-  width: 100%;
-  height: 300px;
+  width: 70%;
+  margin-top: 1em;
+  margin-left: 12.5%;
   object-fit: cover;
+  margin-bottom: 1em;
 }
 
 .grid-item p {
-  margin: 0.3em 0;
+  margin: 0.3em;
   text-align: center;
 }
 
 .grid-item h2 {
   text-align: center;
+  margin: 0;
 }
 
-/* ---------- buttons in grid container ---------- */
+.water {
+  box-shadow: 0px 3px 30px 0px rgb(13, 77, 196) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.fire {
+  box-shadow: 0px 3px 30px 0px rgb(255, 0, 0) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.bug {
+  box-shadow: 0px 3px 30px 0px rgb(2, 170, 72) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.fighting {
+  box-shadow: 0px 3px 30px 0px rgb(105, 55, 8) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.normal {
+  box-shadow: 0px 3px 30px 0px rgb(255, 255, 255) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.psychic {
+  box-shadow: 0px 3px 30px 0px rgb(142, 10, 218) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.psychich {
+  box-shadow: 0px 3px 30px 0px rgb(142, 10, 218) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.ghost {
+  box-shadow: 0px 3px 30px 0px rgb(170, 15, 88) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.fairy {
+  box-shadow: 0px 3px 30px 0px rgb(207, 84, 141) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.flying {
+  box-shadow: 0px 3px 30px 0px rgb(49, 158, 231) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.electric {
+  box-shadow: 0px 3px 30px 0px rgb(221, 241, 41) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.ground {
+  box-shadow: 0px 3px 30px 0px rgb(70, 48, 20) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.sun {
+  box-shadow: 0px 3px 30px 0px rgb(212, 191, 0) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.dark {
+  box-shadow: 0px 3px 30px 0px rgb(5, 6, 10) inset;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+/* ---------- GRID CONTAINER BTN STLYING ---------- */
 
 .grid-container .btns {
   padding: 1em 0 0;
@@ -172,7 +291,7 @@ header h1 {
   width: 100%;
 }
 
-/* ---------- form styling ---------- */
+/* ---------- FORM STYLING ---------- */
 /* input form styling */
 form {
   margin: 2em auto 0;
@@ -201,19 +320,19 @@ input {
   width: 100%;
   max-width: 350px;
   padding: 1em;
-  border: 2px solid green;
+  border: 2px solid rgb(0, 0, 0);
   display: block;
   background: white;
 }
 
-/* ---------- dialog styling ---------- */
+/* ---------- DIALOG STYLING ---------- */
 
 form {
   margin: 0px;
 }
 
 dialog {
-  border-color: green;
+  border-color: rgb(255, 255, 255);
   background-color: rgb(73, 69, 69);
   width: 70vw;
   padding: 0em 0em;
